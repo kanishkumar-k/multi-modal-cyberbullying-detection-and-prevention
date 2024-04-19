@@ -5,7 +5,6 @@ import nltk
 from nltk.stem.porter import PorterStemmer
 import re
 import string
-import winsound
 import speech_recognition as sr
 
 nltk.download('punkt')
@@ -118,7 +117,6 @@ def main():
                         st.error("The audio file was deleted by the system due to inappropriate content.")
                     else:
                         st.error("Error occurred while transcribing audio.")
-                    winsound.Beep(1000, 500)
                 else:
                     st.audio(audio_file, format='audio/wav')  
         except Exception as e:
