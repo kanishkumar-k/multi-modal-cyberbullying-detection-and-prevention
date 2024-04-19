@@ -6,10 +6,7 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import re
 import string
-import transformers
-import torch
 import nltk
-from nltk.sentiment import SentimentIntensityAnalyzer
 nltk.download('punkt')
 
 #nltk.download('vader_lexicon')
